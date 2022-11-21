@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Lib</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Aryan's component library</h2>
+    <h2 id="lib-header">Aryan's component library</h2>
     <!-- <div>This is tag content</div> -->
     <p>This is a library I am making using Tanay Pratap Videos</p>
     <hr>
@@ -21,34 +22,42 @@
 
     <h2>@container</h2>
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till end of page</div>
+    <div class="container cont-fluid">This is a fluid container and it will go till end of page</div>
     <h3>Center container</h3>
-    <div>This is a centered container and it will go till specified width</div>
+    <div class="container cont-center">This is a centered container and it will go till specified width</div>
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Primary Link</a><br>
-    <a href="/">Secondary Link</a><br>
-    <a href="https://www.google.co.in/">Google</a>
-    <hr>
+    <a class="link primary-link" href="/">Primary Link</a>
+    <a class="link secondary-link" href="/">Secondary Link</a>
+    <a class="link primary-link" href="https://www.google.co.in/">Google</a>
+    <hr style="margin-top: 2rem;">
 
     <h2>@lists</h2>
     <h3>Unordered List</h3>
-    <ul>
+    <ul class="non_bullet">
+        <p>This list will not have bullet</p>
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
     </ul>
 
     <h3>Unordered Inline List</h3>
-    <ul>
-        <li>Inline First item</li>
-        <li>Inline Second item</li>
-        <li>Inline Third item</li>
+    <ul class="non_bullet">
+        <li class="list-inline-item">Inline First item</li>
+        <li class="list-inline-item">Inline Second item</li>
+        <li class="list-inline-item">Inline Third item</li>
     </ul>
 
     <h3>Ordered List</h3>
     <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+    
+    <h3>Reversed Ordered List</h3>
+    <ol reversed>
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
@@ -63,23 +72,19 @@
     <hr>
 
     <h2>Navbar</h2>
-    <nav>
-        <div>Iamdev</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-        <ul>
-            <li><a href="/">Projects</a></li>
-        </ul>
-        <ul>
-            <li><a href="/">Blogs</a></li>
+    <nav class="navigation">
+        <div class="nav-brand">Iamdev</div>
+        <ul class="unordered">
+            <li class="list-inline-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="list-inline-item"><a href="/" class="nav-link">Projects</a></li>
+            <li class="list-inline-item"><a href="/" class="nav-link">Blogs</a></li>
         </ul>
     </nav>
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="images/code.svg" alt="">
+    <header class="hero">
+        <img class="hero-img" src="images/code.svg" alt="">
         <h3>Heading inside Header</h3>
     </header>
     <hr>
