@@ -2,9 +2,11 @@
 
 :root{
     --primary-color: #0284c7;
+    --of-white: #e4e4e7;
 }
 body{
     font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
 }
 .cont-fluid{
 
@@ -32,6 +34,7 @@ body{
 .link{
     text-decoration: none;
     padding: 1rem 1rem;
+    color: white;
 }
 .non_bullet{
     list-style: none;
@@ -46,8 +49,8 @@ body{
     color: white;
     padding: 10px;
     border-radius: 5px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /* border-bottom-left-radius: 25px; */
+    border-top-left-radius: 25px;
 }
 .unordered{
     color: white;
@@ -76,4 +79,41 @@ body{
     display: block;
     text-align: center;
     margin: auto;
+}
+.hero-heading{
+    margin: auto;
+    padding-top: 1rem ;
+    text-align: center;
+    font-size: 2rem;
+    color: #8B7280;
+}
+.span-web{
+    color: var(--primary-color);
+}
+
+/* Section */
+.section h3{
+    text-align: center;
+}
+
+.section{
+    padding: 2rem;
+}
+
+.ow{
+background-color: var(--of-white);
+}
+
+footer{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 20px;
+
+}
+
+footer ul{
+    padding-inline-start: 0px;
 }
